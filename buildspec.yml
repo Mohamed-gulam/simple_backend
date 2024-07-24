@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to DockerHub
+      - echo $DOCKERHUB_PASSWORD | docker login --username $DOCKERHUB_USERNAME --password-stdin
+  build:
+    commands:
+      - echo Building Docker image
+      - docker build -t mohamedgulam/backend:latest .
+
+  post_build:
+    commands:
+      - echo Pushing Docker image to DockerHub
+      - docker push mohamedgulam/backend:latest
+
+artifacts:
+  files: Dockerrun.aws.json
