@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "mohamedgulam/backend:latest",
+    "Name": "mohamedgulam/test:latest",
     "Update": "true"
   },
   "Ports": [
@@ -13,7 +13,7 @@
   "containerDefinitions": [
     {
       "name": "React",
-      "image": "mohamedgulam/backend:latest",
+      "image": "mohamedgulam/test:latest",
       "essential": true,
       "memory": 128,
       "cpu": 256
