@@ -1,5 +1,5 @@
 #choosing the base image as the build stage:
-FROM node:18-alpine 
+FROM node:14-alpine 
 
 #choosing working directory for the application:
 WORKDIR /app
