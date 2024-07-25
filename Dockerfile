@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 #building the application:
-RUN npm run build 
+#RUN npm run build 
 
 EXPOSE 5000
 CMD ["npm", "start"]
