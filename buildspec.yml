@@ -8,12 +8,12 @@ phases:
   build:
     commands:
       - echo Building Docker image
-      - docker build -t mohamedgulam/backend:latest .
+      - docker build -t mohamedgulam/test:latest .
 
   post_build:
     commands:
       - echo Pushing Docker image to DockerHub
-      - docker push mohamedgulam/backend:latest
+      - docker push mohamedgulam/test:latest
 
 artifacts:
   files: Dockerrun.aws.json
